@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.logo__link {
+  margin-right: 20px;
+
+  & img {
+    min-height: 52px;
+    min-width: 107px;
+  }
+}
+
+.logo__desc {
+  @include font(14px, 19.6px);
+  text-align: left;
+
+  color: $color-gray;
+}

@@ -1,0 +1,22 @@
+.page-header__phone-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  @include font(16px, 19.5px, bold);
+
+  text-decoration: none;
+  color: $color-pink;
+
+  &::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    margin-right: 6px;
+
+    background-image: url("~assets/images/phone.svg");
+    background-repeat: no-repeat;
+  }
+}

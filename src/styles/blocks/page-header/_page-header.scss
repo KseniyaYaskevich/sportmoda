@@ -1,0 +1,10 @@
+@import "./__logo/page-header__logo";
+@import "./__phone-link/page-header__phone-link";
+@import "./__main-nav/page-header__main-nav";
+@import "./__form-search/page-header__form-search";
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

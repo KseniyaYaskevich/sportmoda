@@ -1,0 +1,23 @@
+.search-form__container {
+  display: flex;
+
+  min-width: 190px;
+  width: 55vw;
+  padding: 7px 10px;
+
+  border: 1px solid $color-pink;
+  border-radius: 4px;
+}
+
+.search-form__input {
+  width: 100%;
+
+  @include font(11px, 13px);
+
+  border: none;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $color-gray--light;
+  }
+}
