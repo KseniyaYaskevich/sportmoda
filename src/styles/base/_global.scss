@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+
+  min-height: 100vh;
+  min-width: $min-width;
+
+  font-family: $font-family--montserrat;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.button {
+  @include reset-btn;
+}
+
+ul {
+  @include reset-list;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
