@@ -12,6 +12,7 @@
 .search-form__input {
   width: 100%;
 
+  font-family: $font-family--montserrat;
   @include font(11px, 13px);
 
   border: none;
