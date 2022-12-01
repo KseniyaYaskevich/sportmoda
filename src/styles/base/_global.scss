@@ -28,10 +28,6 @@ img {
   vertical-align: middle;
 }
 
-.button {
-  @include reset-btn;
-}
-
 ul {
   @include reset-list;
 }

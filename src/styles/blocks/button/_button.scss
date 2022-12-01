@@ -1,0 +1,5 @@
+@import "./_color/button--color-pink";
+
+.button {
+  @include reset-btn;
+}
