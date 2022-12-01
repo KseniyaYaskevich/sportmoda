@@ -1,0 +1,40 @@
+.special {
+  max-width: 320px;
+  margin-bottom: 60px;
+}
+
+.special__item {
+  padding: 0 15px;
+}
+
+.special__max-discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: -8.5px;
+
+  & img {
+    z-index: 1;
+  }
+
+  & span {
+    padding: 11px 16px 10px 15px;
+
+    @include font(14px, 140%, bold);
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $color-white;
+
+    background-image: url("~assets/images/subtract.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.special__star {
+  fill: $color-white;
+
+  &--fill {
+    fill: #FFC107;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./__general/discounts__general";
+@import "./__special/discounts__special";
+
+.swiper-pagination-bullet {
+  margin-right: 5px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: rgba(208, 51, 77);
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 16px;
+}
