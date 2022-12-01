@@ -45,6 +45,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "swiper": "^8.4.5"
   }
 }
