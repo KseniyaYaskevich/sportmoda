@@ -53,7 +53,7 @@ const config = {
     catalog: path.resolve(__dirname, './src/pages/catalog/catalog.js'),
   },
   output: {
-    filename: './scripts/[name].bundle.js',
+    filename: './assets/scripts/[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
@@ -66,15 +66,13 @@ const config = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      assets: path.resolve(__dirname, './src/assets'),
-      scripts: path.resolve(__dirname, './src/scripts'),
-      styles: path.resolve(__dirname, './src/styles'),
+      assets: path.resolve(__dirname, './src/assets')
     },
   },
   plugins: [
     ...pages,
     new MiniCssExtractPlugin({
-      filename: './styles/[name].css',
+      filename: './assets/styles/[name].css',
     }),
     new ImageminWebpWebpackPlugin({
       config: [{
