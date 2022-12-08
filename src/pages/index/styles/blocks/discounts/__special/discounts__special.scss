@@ -31,10 +31,90 @@
   }
 }
 
+.special__image {
+  margin-bottom: 10px;
+}
+
 .special__star {
   fill: $color-white;
 
   &--fill {
     fill: #FFC107;
   }
+}
+
+.special__availability {
+  position: relative;
+
+  @include font(13px, 140%);
+  color: $color-green;
+
+  border-bottom: 1px solid $color-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 40%;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}
+
+.special__title {
+  padding-top: 20px;
+  margin-bottom: 30px;
+
+  @include font(15px, 140%, bold);
+}
+
+.special__price {
+  margin-bottom: 9px;
+
+  @include font(18px, 140%, bold);
+  color: $color-black--lighter;
+
+  & s {
+    padding-left: 10px;
+
+    @include font(14px, 140%);
+    color: #5C5C5C;
+  }
+}
+
+.special__economy {
+  display: inline-flex;
+  align-items: center;
+
+  @include font(14px, 140%);
+  color: $color-black--lighter;
+  border: 1px solid $color-yellow;
+
+  & b {
+    padding: 5px 10px;
+
+    background-color: $color-yellow;
+  }
+
+  & span {
+    padding: 5px 10px;
+
+    background-color: $color-yellow--light;
+  }
+}
+
+.special__shopping-cart {
+  padding: 10px;
+  margin-top: -15px;
+  background-color: $color-pink;
+  border-radius: 50%;
+}
+
+.special__pagination {
+  padding-top: 15px;
+  position: static;
 }

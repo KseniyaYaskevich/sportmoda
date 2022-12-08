@@ -1,0 +1,104 @@
+.sport-goods {
+
+  & .container {
+    padding: 0 15px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.sport-goods__swiper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sport-goods__title {
+  margin-bottom: 10px;
+
+  @include font(22px, 140%, bold);
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.sport-goods__link {
+  @include font(14px, 100%);
+  text-decoration: none;
+  color: $color-pink;
+}
+
+.sport-goods__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin: 0;
+
+  &::after {
+    @include font(16px, 100%, bold);
+    color: $color-pink;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 1;
+
+    &::after {
+      color: #C4C4C4;
+    }
+  }
+}
+
+.sport-goods__item {
+  width: 220px;
+  text-align: center;
+  overflow: hidden;
+
+  & img {
+    transition: filter 1s ease-out;
+  }
+
+  & h3 {
+    display: none;
+
+    @include font(18px, 140%, bold);
+    text-transform: uppercase;
+    color: $color-black--light;
+  }
+
+  &.swiper-slide,
+  &.swiper-slide-prev,
+  &.swiper-slide-next {
+    align-self: center;
+
+    & img {
+      filter: blur(2px);
+      height: 200px;
+    }
+  }
+
+  &.swiper-slide-active {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      filter: blur(0);
+      height: auto;
+    }
+
+    & h3 {
+      position: absolute;
+      bottom: 5%;
+
+      display: block;
+    }
+  }
+}
+
+.sport-goods__pagination {
+  position: static;
+}
