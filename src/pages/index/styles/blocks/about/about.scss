@@ -1,0 +1,39 @@
+.about {
+  text-align: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.about__title {
+  @include font(22px, 140%, bold);
+  text-transform: uppercase;
+}
+
+.about__navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__swiper {
+  max-width: 290px;
+}
+
+.about-company__swiper {
+  margin-bottom: 30px;
+}
+
+.about__item {
+  & img {
+    margin-bottom: 15px;
+
+    height: 92px;
+  }
+
+  & p {
+    @include font(14px, 140%);
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
