@@ -8,7 +8,7 @@ const swiperSportGoods = new Swiper('.sport-goods__swiper', {
   modules: [Navigation, Pagination],
   centeredSlides: true,
   slidesPerView: 'auto',
-  spaceBetween: -25,
+  spaceBetween: 15,
 
   pagination: {
     el: '.sport-goods__pagination',
