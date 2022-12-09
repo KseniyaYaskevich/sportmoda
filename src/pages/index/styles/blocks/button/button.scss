@@ -1,5 +1,12 @@
-@import "./_color/button--color-pink";
-
 .button {
   @include reset-btn;
+
+  &--color-pink {
+    padding: 15px 20px;
+
+    color: $color-white;
+    background-color: $color-pink;
+
+    border-radius: 10px;
+  }
 }
