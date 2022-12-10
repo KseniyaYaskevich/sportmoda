@@ -1,10 +1,8 @@
 .delivery {
+  padding-top: 40px;
+
   text-align: center;
   background: linear-gradient(40deg, rgb(255, 255, 255) 0%, rgb(255, 199, 199) 60%);
-
-  & .container {
-    padding-top: 40px;
-  }
 }
 
 .delivery__title {

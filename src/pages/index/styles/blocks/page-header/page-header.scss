@@ -2,3 +2,10 @@
 @import "./__phone-link/page-header__phone-link";
 @import "./__main-nav/page-header__main-nav";
 @import "./__form-search/page-header__form-search";
+
+.page-header {
+  &.container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
