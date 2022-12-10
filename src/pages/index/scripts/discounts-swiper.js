@@ -3,11 +3,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiperDiscounts = new Swiper('.discounts__general', {
+const swiperDiscounts = new Swiper('.discounts-general__swiper', {
   direction: 'horizontal',
   modules: [Navigation, Pagination],
   pagination: {
-    el: '.general__pagination',
+    el: '.discounts-general__pagination',
     clickable: true,
   },
   //   navigation: {
@@ -16,11 +16,11 @@ const swiperDiscounts = new Swiper('.discounts__general', {
   //   },
 });
 
-const swiperDiscountMax = new Swiper('.discounts__special', {
+const swiperDiscountMax = new Swiper('.discounts-special__swiper', {
   direction: 'horizontal',
   modules: [Navigation, Pagination],
   pagination: {
-    el: '.special__pagination',
+    el: '.discounts-special__pagination',
     clickable: true,
   },
   //   navigation: {
