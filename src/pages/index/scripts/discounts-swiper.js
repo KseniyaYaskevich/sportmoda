@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 const swiperDiscounts = new Swiper('.discounts-general__swiper', {
   direction: 'horizontal',
   modules: [Navigation, Pagination],
+  grabCursor: true,
   pagination: {
     el: '.discounts-general__pagination',
     clickable: true,
@@ -19,6 +20,7 @@ const swiperDiscounts = new Swiper('.discounts-general__swiper', {
 const swiperDiscountMax = new Swiper('.discounts-special__swiper', {
   direction: 'horizontal',
   modules: [Navigation, Pagination],
+  grabCursor: true,
   pagination: {
     el: '.discounts-special__pagination',
     clickable: true,
