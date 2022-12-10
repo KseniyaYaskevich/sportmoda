@@ -13,10 +13,7 @@
 }
 
 .delivery__link {
-  display: inline-block;
   margin-bottom: 30px;
 
   @include font(16px, 20px);
-  text-decoration: none;
-  color: $color-pink;
 }

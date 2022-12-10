@@ -1,0 +1,10 @@
+.link {
+  display: inline-block;
+
+  @include font(14px, 17px);
+  text-decoration: none;
+
+  &--color-pink {
+    color: $color-pink;
+  }
+}

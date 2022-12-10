@@ -10,12 +10,6 @@
   text-transform: uppercase;
 }
 
-.sport-goods__link {
-  @include font(14px, 100%);
-  text-decoration: none;
-  color: $color-pink;
-}
-
 .sport-goods__navigation {
   display: flex;
   justify-content: space-between;
