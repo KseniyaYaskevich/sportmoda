@@ -1,9 +1,9 @@
-.general {
+.discounts-general__swiper {
   max-width: 320px;
   margin-bottom: 30px;
 }
 
-.general__item {
+.discounts-general__item {
   position: relative;
   overflow: hidden;
 
@@ -46,7 +46,7 @@
   }
 }
 
-.general__content {
+.discounts-general__content {
   z-index: 1;
   width: 55%;
 
@@ -80,7 +80,7 @@
   }
 }
 
-.general__image {
+.discounts-general__image {
   position: absolute;
   top: 0%;
   right: -15%;

@@ -1,12 +1,12 @@
-.special {
-  max-width: 320px;
+.discounts-special__swiper {
+  max-width: 290px;
 }
 
-.special__item {
-  padding: 0 15px;
+.discounts-special__item {
+  width: 290px;
 }
 
-.special__max-discount {
+.discounts-special__max-discount {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,11 +30,11 @@
   }
 }
 
-.special__image {
+.discounts-special__image {
   margin-bottom: 10px;
 }
 
-.special__star {
+.discounts-special__star {
   fill: $color-white;
 
   &--fill {
@@ -42,7 +42,7 @@
   }
 }
 
-.special__availability {
+.discounts-special__availability {
   position: relative;
 
   @include font(13px, 140%);
@@ -64,14 +64,14 @@
   }
 }
 
-.special__title {
+.discounts-special__title {
   padding-top: 20px;
   margin-bottom: 30px;
 
   @include font(15px, 140%, bold);
 }
 
-.special__price {
+.discounts-special__price {
   margin-bottom: 9px;
 
   @include font(18px, 140%, bold);
@@ -85,7 +85,7 @@
   }
 }
 
-.special__economy {
+.discounts-special__economy {
   display: inline-flex;
   align-items: center;
 
@@ -106,14 +106,14 @@
   }
 }
 
-.special__shopping-cart {
+.discounts-special__shopping-cart {
   padding: 10px;
   margin-top: -15px;
   background-color: $color-pink;
   border-radius: 50%;
 }
 
-.special__pagination {
+.discounts-special__pagination {
   padding-top: 15px;
   position: static;
 }
