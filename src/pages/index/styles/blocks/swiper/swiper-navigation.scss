@@ -1,0 +1,18 @@
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin: 0;
+
+  &::after {
+    @include font(16px, 100%, bold);
+    color: $color-pink;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 1;
+
+    &::after {
+      color: #C4C4C4;
+    }
+  }
+}
