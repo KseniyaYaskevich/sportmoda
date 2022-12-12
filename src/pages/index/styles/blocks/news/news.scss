@@ -22,7 +22,8 @@
 
       margin-left: 5px;
 
-      background-image: url("~assets/images/news/arrow.svg");
+      mask-image: url("~assets/images/arrow.svg");
+      background-color: currentColor;
     }
   }
 }
