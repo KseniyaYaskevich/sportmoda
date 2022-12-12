@@ -32,7 +32,7 @@
   & p {
     @include font(14px, 140%);
 
-    &:not(:last-child) {
+    &:first-of-type {
       margin-bottom: 10px;
     }
   }
