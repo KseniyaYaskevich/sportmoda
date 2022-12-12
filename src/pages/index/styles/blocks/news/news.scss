@@ -1,0 +1,28 @@
+.news {
+  margin-bottom: 60px;
+}
+
+.news__title {
+  @include font(22px, 140%, bold);
+  text-transform: uppercase;
+}
+
+.news__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__item {
+  & a {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 8px;
+
+      margin-left: 5px;
+
+      background-image: url("~assets/images/news/arrow.svg");
+    }
+  }
+}
