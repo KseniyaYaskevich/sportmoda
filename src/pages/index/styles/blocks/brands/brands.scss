@@ -1,0 +1,50 @@
+.brands {
+  border-bottom: 3px solid $color-pink;
+
+  & .container {
+    margin-bottom: 30px;
+  }
+}
+
+.brands__desc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  & span {
+    min-width: 240px;
+    margin: 0 10px;
+
+    @include font(20px, 140%);
+    text-transform: uppercase;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: $color-pink;
+  }
+}
+
+.brands__title {
+  @include font(22px, 140%, bold);
+  text-transform: uppercase;
+}
+
+.brands__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands__item {
+  margin-bottom: 15px;
+}
+
+.brands__pagination {
+  position: static;
+}
