@@ -1,0 +1,121 @@
+.offers {
+  margin-bottom: 60px;
+}
+
+.offers__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 377px;
+
+  background-color: $color-gray--lighter;
+  overflow: hidden;
+
+  &:first-child {
+    margin-bottom: 30px;
+  }
+
+  &--discount-program,
+  &--gift-certificates {
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  &--discount-program {
+    background-image: url("~assets/images/offers/wave.svg");
+  }
+
+  &--gift-certificates {
+    background-image: url("~assets/images/offers/wave-2.svg");
+  }
+}
+
+.offers__inner {
+  z-index: 2;
+  padding: 20px
+}
+
+.offers__title {
+  margin-bottom: 20px;
+
+  @include font(18px, 140%, bold);
+  text-transform: uppercase;
+}
+
+.offers__link {
+  @include font(12px, 140%);
+  color: $color-black--light;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+
+    margin-left: 5px;
+
+    mask-image: url("~assets/images/arrow.svg");
+    background-color: currentColor;
+  }
+}
+
+.offers__discount-program,
+.offers__gift-certificates {
+  position: relative;
+  z-index: 1;
+}
+
+.offers__discount-program {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("~assets/images/offers/percent.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    top: 45px;
+    left: 0;
+    z-index: -1;
+
+    width: 78px;
+    height: 84px;
+
+    filter: blur(2px);
+  }
+
+  &::after {
+    top: -118px;
+    right: 7px;
+
+    width: 116px;
+    height: 125px;
+  }
+}
+
+.offers__gift-certificates {
+  & img {
+    transform: translate(48px, -28px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -185px;
+
+    width: 666px;
+    height: 295px;
+
+    background-image: url("~assets/images/offers/ribbon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: scaleX(-1) rotate(-15deg);
+  }
+}
