@@ -1,0 +1,35 @@
+.advantages {
+  margin-bottom: 80px;
+
+  & .flex-container {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__title {
+  @include font(22px, 140%, bold);
+  text-transform: uppercase;
+}
+
+.advantages__navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__item {
+  margin-bottom: 15px;
+
+  text-align: center;
+
+  & img {
+    margin-bottom: 10px;
+  }
+
+  & p {
+    @include font(16px, 140%);
+  }
+}
+
+.advantages__pagination {
+  position: static;
+}
