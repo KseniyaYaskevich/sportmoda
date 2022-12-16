@@ -13,11 +13,11 @@
 
   &--active {
 
-    & .page-footer__arrow {
+    & .submenu__heading span {
       transform: rotate(180deg);
     }
 
-    & .page-footer__sublist {
+    & .submenu__list {
       position: static;
 
       opacity: 1;
@@ -80,7 +80,7 @@
   }
 }
 
-.page-footer__sublist {
+.submenu__list {
   position: absolute;
 
   width: 100%;
@@ -93,7 +93,7 @@
   transition: opacity .4s ease-out;
 }
 
-.page-footer__subitem {
+.submenu__item {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: none;
 
@@ -102,6 +102,6 @@
   }
 }
 
-.page-footer__sublink {
+.submenu__link {
   @include font(12px, 140%);
 }
