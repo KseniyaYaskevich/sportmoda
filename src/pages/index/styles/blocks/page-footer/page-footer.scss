@@ -7,9 +7,27 @@
 }
 
 .page-footer__item {
-  position: relative;
-
   border-bottom: 1px solid rgba($color-white, 0.3);
+}
+
+.page-footer__link,
+.submenu__heading,
+.submenu__link {
+  display: block;
+  padding: 15px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.page-footer__link,
+.submenu__heading {
+  @include font(14px, 140%, bold);
+}
+
+.submenu {
+  position: relative;
 
   &--active {
 
@@ -21,76 +39,65 @@
       position: static;
 
       opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
+      transform: rotateX(0) translateZ(0);
     }
   }
-
-  & .flex-container {
-    cursor: pointer;
-  }
 }
 
-.page-footer__link,
-.page-footer__sublink {
-  display: block;
-  padding: 15px;
+.submenu__heading {
+  display: flex;
+  justify-content: space-between;
 
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-white;
-}
+  cursor: pointer;
 
-.page-footer__link {
-  @include font(14px, 140%, bold);
-}
+  & span {
+    position: relative;
 
-.page-footer__arrow {
-  position: relative;
+    width: 15px;
 
-  display: inline-block;
-  width: 15px;
-  margin: 0 15px;
+    transition: transform .4s ease-out;
 
-  transition: transform .4s ease-out;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      margin: auto;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+      width: 60%;
+      height: 2px;
 
-    width: 60%;
-    height: 2px;
+      background-color: $color-white;
+      border-radius: 4px;
+    }
 
-    background-color: $color-white;
-    border-radius: 4px;
-  }
+    &::before {
+      left: 0;
+      transform: rotate(45deg);
+    }
 
-  &::before {
-    left: 0;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    right: 0;
-    transform: rotate(-45deg);
+    &::after {
+      right: 0;
+      transform: rotate(-45deg);
+    }
   }
 }
 
 .submenu__list {
   position: absolute;
+  top: 0;
+  left: 0;
 
-  width: 100%;
   padding: 10px 20px;
 
   opacity: 0;
-  visibility: hidden;
-  transform: translateY(-100%);
+  backface-visibility: hidden;
 
-  transition: opacity .4s ease-out;
+  transform: rotateX(-90deg);
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  transition: transform .4s ease-out, opacity 0s;
 }
 
 .submenu__item {
