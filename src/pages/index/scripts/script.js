@@ -5,3 +5,4 @@ import './about-swiper';
 import './news-swiper';
 import './brands-swiper';
 import './advantages-swiper';
+import './page-footer-menu';
